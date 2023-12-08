@@ -1,10 +1,25 @@
+using calculadora.Services;
+
 namespace calculadora_testes;
 
-public class UnitTest1
+public class Calculadora_testes
 {
-    [Fact]
-    public void Test1()
-    {
+    private CalculadoraImp _calc;
 
+    public Calculadora_testes()
+    {
+        _calc = new CalculadoraImp();
+    }
+
+    [Fact]
+    public void DeveSomar5Com10ERetornar15()
+    {
+        // Arrange
+        int num1 = 5;
+        int num2 = 10;
+        // Act
+        int resultado = _calc.Somar(num1, num2);
+        // Assert
+        Assert.Equal(15, resultado);
     }
 }

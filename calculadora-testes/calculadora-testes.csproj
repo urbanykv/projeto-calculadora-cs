@@ -23,4 +23,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\calculadora\calculadora.csproj" />
+  </ItemGroup>
+
 </Project>
